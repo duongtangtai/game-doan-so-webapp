@@ -17,7 +17,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-    <a class="navbar-brand font-weight-bold" href="#">Bảng Xếp Hạng Các Người Chơi</a>
+    <a class="navbar-brand font-weight-bold" href="#">TOP 20 NGƯỜI CHƠI HAY NHẤT</a>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">

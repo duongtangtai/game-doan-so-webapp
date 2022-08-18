@@ -183,9 +183,10 @@ public class GameSessionRepository extends AbstractRepository {
 
     /**
      * The method returns a list of Rank Models due to player rankings
+     * @param numOfRanks Number of top players
      * @return a list of Rank Models
      */
-    public List<Rank> getRankList() {
+    public List<Rank> getRankList(int numOfRanks) {
         String sqlSt = """
                 SELECT table_a.username, max(table_a.id) AS gameSessionId, table_a.tryTimes, min(table_a.totalSeconds) AS totalSeconds
                 FROM
@@ -205,11 +206,12 @@ public class GameSessionRepository extends AbstractRepository {
                 ON table_a.username = table_b.username
                 AND table_a.tryTimes = table_b.min_tryTimes
                 GROUP BY username, tryTimes
-                ORDER BY tryTimes ASC, min(totalSeconds) ASC;
+                ORDER BY tryTimes ASC, min(totalSeconds) ASC
+                LIMIT ?
                 """;
         rankList.clear();
         return processListQuery(sqlSt, preparedStatement -> {
-           ResultSet resultSet = preparedStatement.executeQuery();
+           ResultSet resultSet = fillStatement(preparedStatement, numOfRanks).executeQuery();
            while (resultSet.next()) {
                rankList.add(new Rank()
                        .username(resultSet.getString("username"))

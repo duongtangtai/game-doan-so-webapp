@@ -17,6 +17,7 @@ public class GameService {
     private final GuessRepository guessRepository;
     private static final int NUM_OF_DISPLAYED_PAGES = 5;
     private static final int NUM_OF_DISPLAYED_RECS = 10;
+    private static final int NUM_OF_TOP_RANKS = 20;
     private int startId;
     public static GameService getService() {
         if (service == null) {
@@ -162,7 +163,7 @@ public class GameService {
      * @return a list of Rank Models
      */
     public List<Rank> getRankList() {
-        return gameSessionRepository.getRankList();
+        return gameSessionRepository.getRankList(NUM_OF_TOP_RANKS);
     }
 
     /**
