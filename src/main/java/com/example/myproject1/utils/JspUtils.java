@@ -1,7 +1,9 @@
 package com.example.myproject1.utils;
 
 public class JspUtils {
-    private JspUtils(){}
+    private JspUtils(){
+        throw new IllegalStateException("Utility class");
+    }
     public static final String HOME = "/WEB-INF/views/home.jsp";
     public static final String DANG_KY = "/WEB-INF/views/auth/dang-ky.jsp";
     public static final String DANG_NHAP = "/WEB-INF/views/auth/dang-nhap.jsp";

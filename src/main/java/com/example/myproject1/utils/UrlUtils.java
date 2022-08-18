@@ -1,6 +1,9 @@
 package com.example.myproject1.utils;
 
 public class UrlUtils {
+    private UrlUtils() {
+        throw new IllegalStateException("Utility class");
+    }
     public static final String ALL = "/*";
     public static final String ROOT = "/";
     public static final String DANG_KY = "/dang-ky";

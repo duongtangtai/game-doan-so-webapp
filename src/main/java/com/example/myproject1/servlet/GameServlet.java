@@ -83,7 +83,6 @@ public class GameServlet extends HttpServlet {
             service.updateGameSession(gameSession);
             processPlayGame(req, resp);
         }
-        System.out.println(gameSession.getTargetNumber()); //to test game
     }
     private void processContinueGame(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Player player = (Player) req.getSession().getAttribute("currentUser");
