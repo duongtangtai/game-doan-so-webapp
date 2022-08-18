@@ -1,0 +1,9 @@
+
+g
+java:S1192>"LDefine a constant instead of duplicating this literal "currentUser" 4 times.(œµ¸Æüÿÿÿÿ
+b
+java:S1192B"GDefine a constant instead of duplicating this literal "errors" 5 times.(Àá“Çþÿÿÿÿ
+W
+java:S2441>"<Make "Player" serializable or don't store it in the session.(œµ¸Æüÿÿÿÿ
+W
+java:S2441P"<Make "Player" serializable or don't store it in the session.(³úÅüÿÿÿÿ
