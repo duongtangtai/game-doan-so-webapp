@@ -16,9 +16,8 @@ public class PlayerRepository extends AbstractRepository{
             String name = player.getName();
             if (sqlSt.startsWith("insert")) {
                 return fillStatement(preparedStatement, username, password, name).executeUpdate();
-            } else { //update
-                return fillStatement(preparedStatement, password, name, username).executeUpdate();
-            }
+            }//update
+            return fillStatement(preparedStatement, password, name, username).executeUpdate();
         });
     }
 

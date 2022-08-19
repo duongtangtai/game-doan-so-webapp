@@ -54,10 +54,9 @@ public class GameSessionRepository extends AbstractRepository {
             if (sqlSt.startsWith("insert")) {
                 return fillStatement(preparedStatement, startId, id, targetNumber, startTime, endTime,
                         completed, active, username).executeUpdate();
-            } else { //update
-                return fillStatement(preparedStatement, id, targetNumber, startTime, endTime,
+            } //update
+            return fillStatement(preparedStatement, id, targetNumber, startTime, endTime,
                         completed, active, username, startId).executeUpdate();
-            }
         });
     }
     /**
@@ -121,7 +120,7 @@ public class GameSessionRepository extends AbstractRepository {
                 """;
         return processObjQuery(sqlSt, preparedStatement -> {
            ResultSet resultSet = fillStatement(preparedStatement, username).executeQuery();
-           resultSet.next();
+           resultSet.next(); //if there's no last game -> count(id) would be 0
            double totalGames = Double.parseDouble(resultSet.getString("maxGame"));
            return totalGames == 0 ? 1 : (int) Math.ceil(totalGames/10);
         });

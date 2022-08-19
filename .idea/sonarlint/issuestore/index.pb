@@ -37,12 +37,6 @@ k
 ;src/main/java/com/example/myproject1/model/GameSession.java,b\9\b91c7172b37892ed8b887d7f99a554253c645094
 e
 5src/main/java/com/example/myproject1/model/Guess.java,8\e\8ecc9eeb7c5c5e78bb6fd8235c8822951b344e7b
-w
-Gsrc/main/java/com/example/myproject1/repository/AbstractRepository.java,1\4\14b20081844a877f1b59c1de19fe3680d656a8b0
-t
-Dsrc/main/java/com/example/myproject1/repository/GuessRepository.java,a\2\a223642073ef066a59fca09b20a7c381676c6786
-u
-Esrc/main/java/com/example/myproject1/repository/PlayerRepository.java,b\c\bc0e6e0e096116072afead8bb5c43c10e2722430
 h
 8src/main/java/com/example/myproject1/service/Result.java,3\8\38ae5b9c426384c7477d258c3917fc8c6279e444
 D
@@ -51,6 +45,8 @@ m
 =src/main/java/com/example/myproject1/servlet/AuthServlet.java,c\1\c136cf6efc1e58f1dc5f5ce73adb295b33d559c6
 t
 Dsrc/main/java/com/example/myproject1/servlet/ErrorHandleServlet.java,4\b\4b977b506af886d257882058c3783a195195f5c2
+m
+=src/main/java/com/example/myproject1/servlet/GameServlet.java,9\6\964fd1beae096c7e8440def9e369a52a5d3b05d6
 h
 8src/main/java/com/example/myproject1/utils/JspUtils.java,a\e\ae03d1bf901aabeab8c1d13d39a6bed8e9f6fd15
 h
@@ -60,8 +56,12 @@ _
 [
 +src/main/webapp/WEB-INF/views/game/game.jsp,7\f\7f4127d6aef665d7722fb9fe1e3ccb7a1412eae4
 m
-=src/main/java/com/example/myproject1/servlet/GameServlet.java,9\6\964fd1beae096c7e8440def9e369a52a5d3b05d6
+=src/main/java/com/example/myproject1/service/GameService.java,3\a\3aae3c81261806250101a4c7e357d052cf08e799
 z
 Jsrc/main/java/com/example/myproject1/repository/GameSessionRepository.java,0\4\04a9711df7387185923b269c158b4427747d2d8f
-m
-=src/main/java/com/example/myproject1/service/GameService.java,3\a\3aae3c81261806250101a4c7e357d052cf08e799
+w
+Gsrc/main/java/com/example/myproject1/repository/AbstractRepository.java,1\4\14b20081844a877f1b59c1de19fe3680d656a8b0
+t
+Dsrc/main/java/com/example/myproject1/repository/GuessRepository.java,a\2\a223642073ef066a59fca09b20a7c381676c6786
+u
+Esrc/main/java/com/example/myproject1/repository/PlayerRepository.java,b\c\bc0e6e0e096116072afead8bb5c43c10e2722430
