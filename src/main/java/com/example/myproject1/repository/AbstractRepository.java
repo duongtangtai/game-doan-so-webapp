@@ -9,7 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
 
-public class AbstractRepository {
+public abstract class AbstractRepository {
     /**
      * Process a SQL query with Autocloseable connection. This is a wrapper lambda due to handling exceptions.
      * @return an Object
