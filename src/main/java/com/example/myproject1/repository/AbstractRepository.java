@@ -19,6 +19,7 @@ public abstract class AbstractRepository {
         PreparedStatement preparedStatement = connection.prepareStatement(sql)){
             return processor.processStatement(preparedStatement);
         } catch (SQLException e) {
+            System.out.println("asd");
             throw new DatabaseNotFoundException(e.getMessage());
         }
     }
